@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+
+
+.navbar-parent {
+    background-color: #2c3e50;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.brand-name {
+    font-family: 'Arizonia', cursive;
+    font-size: 2.5rem;
+    color: #3498db;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.project-detail {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    /* White background for the content area */
+    border-radius: 10px;
+    /* Rounded corners for a softer look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* More pronounced shadow for depth */
+}
+
+.project-image img {
+    width: 100%;
+    border-radius: 10px;
+    /* Rounded corners for the image */
+    margin-bottom: 20px;
+    /* Space below the image */
+}
+
+.project-detail h2 {
+    margin-bottom: 20px;
+    /* Increased spacing for headings */
+    color: #2c3e50;
+    /* Darker color for main headings */
+}
+
+.project-detail h3 {
+    margin-top: 25px;
+    /* Spacing above subheadings */
+    color: #34495e;
+    /* Slightly lighter color for subheadings */
+}
+
+.project-key-features {
+    margin-top: 30px;
+    /* Spacing above key features section */
+    color: #2980b9;
+    /* Attractive color for key features heading */
+}
+
+.project-detail ul {
+    list-style-type: square;
+    /* Custom bullet points for lists */
+    margin-left: 20px;
+    padding: 10px;
+    /* Padding for better spacing */
+}
+
+.project-detail ul li {
+    margin-bottom: 10px;
+    /* Spacing between list items */
+}
+
+.project-detail p {
+    margin-bottom: 15px;
+    /* Spacing between paragraphs */
+    color: #555;
+    /* Subtle gray color for text for better readability */
+}
+
+.project-title,
+.project-subtitle {
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .project-detail {
+        padding: 15px;
+        /* Reduce padding on smaller screens */
+    }
+
+    .project-detail h2,
+    .project-detail h3 {
+        font-size: 1.5em;
+        /* Responsive font size for headings */
+    }
+}

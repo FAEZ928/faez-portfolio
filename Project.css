@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+
+.navbar-parent {
+    background-color: #2c3e50;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.brand-name {
+    font-family: 'Arizonia', cursive;
+    font-size: 2.5rem;
+    color: #3498db;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.brand-name {
+    font-family: "Lovely Home", cursive;
+    font-size: 50px;
+    font-weight: bold;
+    color: blue;
+}
+
+.section {
+    padding: 20px 10%;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.projectimage {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.project-heading {
+    width: 50%;
+}
+
+.P-heading {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.p-text {
+    font-size: 18px;
+    color: #868e96;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-box {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.project-box:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-text {
+    color: #868e96;
+    font-family: "Montserrat";
+    font-weight: 300;
+}
+
+.link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.link:hover {
+    background-color: #2980b9;
+}
+
+@media screen and (max-width: 776px) {
+    .intro {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .projectimage {
+        width: 80%;
+        margin: auto;
+    }
+
+    .project-heading {
+        width: 80%;
+        margin: auto;
+    }
+}

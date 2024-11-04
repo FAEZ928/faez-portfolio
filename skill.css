@@ -1,0 +1,193 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f2f6fc 0%, #e3eaf5 100%);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+
+.navbar-parent {
+    background-color: #2c3e50;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.brand-name {
+    font-family: 'Arizonia', cursive;
+    font-size: 2.5rem;
+    color: #3498db;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.skill-head {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.skill-head h1 {
+    font-size: 2.5em;
+    color: #2e3d66;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.skill-head p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Main Container */
+.skills-container {
+    max-width: 800px;
+    width: 100%;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.skills-container h2 {
+    color: #2e3d66;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e3eaf5;
+    padding-bottom: 5px;
+}
+
+/* Skills List */
+.skills-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.skills-list li {
+    margin-bottom: 12px;
+    font-size: 1.1em;
+    position: relative;
+    padding-left: 25px;
+    color: #333;
+}
+
+.skills-list li::before {
+    content: "✔";
+    color: #2e3d66;
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+}
+
+/* Experience List */
+.experience-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.experience-list li {
+    margin-bottom: 18px;
+    font-size: 1.1em;
+    position: relative;
+    padding-left: 25px;
+    color: #333;
+}
+
+.experience-list li::before {
+    content: "★";
+    color: #2e3d66;
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+}
+
+.experience-list p {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Download CV Link */
+.cv-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.download-link {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #2e3d66;
+    background: #e3eaf5;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.download-link:hover {
+    background: #2e3d66;
+    color: #fff;
+}
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .skill-head h1 {
+        font-size: 2em;
+    }
+
+    .skills-container {
+        padding: 20px;
+    }
+
+    .skills-container h2 {
+        font-size: 1.5em;
+    }
+
+    .skills-list li,
+    .experience-list li,
+    .download-link {
+        font-size: 1em;
+    }
+}
